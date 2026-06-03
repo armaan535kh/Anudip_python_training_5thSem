@@ -2,12 +2,16 @@
 #Input from the user
 
 length = int(input("Enter the length of a Rectangle in cm : "))
-Width = int(input("Enter the width of a Rectangle in cm : "))
-
-#Checking the information
-
-if(length < 0 and Width < 0):
+if(length <= 0):
     exit(" length and width can't be 0 ")
+
+Width = int(input("Enter the width of a Rectangle in cm : "))
+if(Width <= 0):
+    exit(" width can't be  0 ")
+
+
+
+
 
 print("-----------------------------------")
 
