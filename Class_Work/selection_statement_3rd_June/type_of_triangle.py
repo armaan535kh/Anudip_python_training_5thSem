@@ -23,8 +23,12 @@ if(angle1 + angle2 + angle3 == 180):
     #acute angled triangle
     if(angle1 < 90 and angle2 < 90 and angle3 < 90):
         print("Above angles form acute angled triangle")
+
+    #right angled triangle
     elif(angle1 == 90 or angle2 == 90 or angle3 == 90):
         print("Above angles form right angled triangle")
+
+    #obstuse angled triangle
     else:
         print("Above angles form obtuse Angle Triangle")
 else:
