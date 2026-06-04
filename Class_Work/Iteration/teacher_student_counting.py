@@ -2,7 +2,7 @@ students = 1
 students_present = 0
 students_absent = 0
 
-while(students <= 5):
+while(students <= 30):
     
     present = int(input("Is student  present (yes == 1/no == 0) : "))
     if(present != 1 and present != 0):
