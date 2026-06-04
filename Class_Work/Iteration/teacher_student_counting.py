@@ -4,6 +4,7 @@ students_absent = 0
 
 while(students <= 30):
     
+    #validating input
     present = int(input("Is student  present (yes == 1/no == 0) : "))
     if(present != 1 and present != 0):
         exit("Input should be in 0 or 1")
