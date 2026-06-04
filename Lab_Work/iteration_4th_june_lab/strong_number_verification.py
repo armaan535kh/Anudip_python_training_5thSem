@@ -20,6 +20,6 @@ while temp > 0:
 
 
 if digit_sum == number:
-    print(f"{number} is a Strong Number")
+    print("IT is a Strong Number")
 else:
-    print(f"{number} is not a Strong Number")
+    print("IT is not a Strong Number")

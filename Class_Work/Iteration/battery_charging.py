@@ -1,8 +1,0 @@
-#program for displaying battery charging level 
-charging_level = 20
-while( charging_level <= 100):
-        print("Battery level : ", charging_level, "%")
-        charging_level += 10
-    
-#-------------------------------------------------
-print("Full Charge")
