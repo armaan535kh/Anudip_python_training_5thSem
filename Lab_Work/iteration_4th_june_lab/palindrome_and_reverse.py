@@ -12,7 +12,7 @@ while temp_number > 0:
     temp_number = temp_number // 10
 
 # Display the reverse number
-print(f"Reverse: {reverse_number}")
+print("Reverse: ", reverse_number)
 
 # Selection statement to check if it is a palindrome
 if original_number == reverse_number:
