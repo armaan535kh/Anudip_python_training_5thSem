@@ -15,13 +15,13 @@ while choice != 4:
     
     # Selection statements to handle user choices
     if choice == 1:
-        print(f"Your current balance is: ₹{balance}")
+        print("Your current balance is: ₹", balance)
         
     elif choice == 2:
         deposit_amount = float(input("Enter the amount to deposit: ₹"))
         if deposit_amount > 0:
             balance += deposit_amount
-            print(f"₹{deposit_amount} deposited successfully.")
+            print(" deposited successfully.", deposit_amount)
         else:
             print("Invalid amount. Deposit must be greater than zero.")
             
@@ -33,7 +33,7 @@ while choice != 4:
             print("Invalid amount. Withdrawal must be greater than zero.")
         else:
             balance -= withdraw_amount
-            print(f"₹{withdraw_amount} withdrawn successfully.")
+            print("withdrawn successfully.", withdraw_amount)
             
     elif choice == 4:
         print("Thank you for using the ATM. Goodbye!")
