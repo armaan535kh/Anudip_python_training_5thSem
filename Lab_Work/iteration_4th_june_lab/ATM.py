@@ -12,6 +12,8 @@ while choice != 4:
     
     # Take user input for the menu choice
     choice = int(input("Enter your choice (1-4): "))
+    if(choice < 0 or choice > 4):
+        exit("Invalid choice")
     
     # Selection statements to handle user choices
     if choice == 1:
