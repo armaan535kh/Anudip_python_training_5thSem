@@ -1,6 +1,11 @@
 # Accept employee details from the user
 employee_name = input("Enter Employee Name: ")
+
+
 basic_salary = float(input("Enter Basic Salary: ₹"))
+#validation
+if(basic_salary < 0):
+    exit("Salary can't be negative")
 
 # Calculate components based on the given percentages
 hra = 0.20 * basic_salary
