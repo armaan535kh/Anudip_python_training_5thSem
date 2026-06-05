@@ -21,7 +21,7 @@ else:
 
 # Display the processed payroll information
 print("\n--- Payroll Slip ---")
-print(f"Employee Name : {employee_name}")
-print(f"Gross Salary  : ₹{gross_salary:.2f}")
-print(f"Net Salary    : ₹{net_salary:.2f}")
-print(f"Grade         : {grade}")
+print("Employee Name : ", employee_name)
+print("Gross Salary  : ₹", gross_salary)
+print("Net Salary    : ₹", net_salary)
+print("Grade         : ", grade)
