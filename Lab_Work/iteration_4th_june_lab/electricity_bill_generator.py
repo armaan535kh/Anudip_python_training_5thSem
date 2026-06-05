@@ -11,18 +11,15 @@ category = ""
 # calculating the bill
 if units <= 100:
     total_bill = units * 5
-elif units <= 200:
-    total_bill = (100 * 5) + ((units - 100) * 7)
-else:
-    total_bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
-
-#consumption energy
-if units <= 100:
     category = "Low Consumption"
 elif units <= 200:
+    total_bill = (100 * 5) + ((units - 100) * 7)
     category = "Medium Consumption"
 else:
+    total_bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)
     category = "High Consumption"
+
+
 
 #  Display output
 print("Units Consumed: ", units)
