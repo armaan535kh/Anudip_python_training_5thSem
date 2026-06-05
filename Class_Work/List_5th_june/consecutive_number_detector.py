@@ -20,7 +20,7 @@ numbers = [4, 5, 6, 10, 11, 15, 16, 17]
 consecutive_pairs = []
 
 # Loop through the list using index positions
-# We stop at len(numbers) - 1 so we don't go past the last item
+# We stop at len(numbers) - 1 
 for i in range(0, len(numbers) - 1):
     
     # Get the current number and the very next number
