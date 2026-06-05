@@ -1,6 +1,6 @@
 # Program to Accept marks of 5 subjects.
 
-# Student Result Management System 
+
 
 total_marks = 0.0
 failed_subjects_count = 0
@@ -18,7 +18,7 @@ for i in range(1, 6):
         failed_subjects_count = failed_subjects_count + 1
 
 
-percentage = total_marks / 5
+percentage = (total_marks / 500)*100
 
 
 if percentage >= 90:
