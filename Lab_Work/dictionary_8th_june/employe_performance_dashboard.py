@@ -70,28 +70,27 @@ for emp in performance:
     score = performance[emp]
     if score > 80:
         print(emp)
-print() # Prints an empty line for spacing
+print()
 
 # ---------------------------------------------------------
-# Task 3: Find the top performer 
+# Task 3: Find the top performer
 # ---------------------------------------------------------
-# We use a flag to automatically capture the first item as our benchmark
-top_emp = ""
-top_score = 0
-is_first = True
+# Convert to a standard list to access indices safely
+items_list = list(performance.items())
 
-for emp in performance:
-    score = performance[emp]
+# Initialize top performer using the first employee's data
+top_emp = items_list[0][0]
+top_score = items_list[0][1]
+
+# Loop through all items using the list structure
+for item in items_list:
+    emp_id = item[0]
+    score_value = item[1]
     
-    if is_first == True:
-        top_emp = emp
-        top_score = score
-        is_first = False # Turn off the flag so it only runs once
-    else:
-        # Check if this person beat the current top score
-        if score > top_score:
-            top_score = score
-            top_emp = emp
+    # Check for highest score
+    if score_value > top_score:
+        top_emp = emp_id
+        top_score = score_value
 
 print("Top Performer: " + top_emp + " (" + str(top_score) + ")")
 print()
@@ -119,10 +118,9 @@ for emp in performance:
     total_score = total_score + score
     total_employees = total_employees + 1
 
-# Calculate average (Total sum divided by total count)
 average_score = total_score / total_employees
 
-# round(average_score, 1) keeps exactly one decimal place (e.g., 71.3)
+# round(..., 1) keeps one decimal place to match 71.3
 print("Average Score: " + str(round(average_score, 1)))
 print()
 
