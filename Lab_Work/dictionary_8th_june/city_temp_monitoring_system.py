@@ -17,8 +17,7 @@ temperature = {
 # ---------------------------------------------------------
 print("Cities Above 40°C:")
 for city in temperature:
-    temp_value = temperature[city]
-    if temp_value > 40:
+    if temperature[city] > 40:
         print(city)
 print()
 
