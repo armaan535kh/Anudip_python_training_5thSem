@@ -67,30 +67,36 @@ print()
 # ---------------------------------------------------------
 # Task 2 & 3: Find Best-selling and Least-selling products
 # ---------------------------------------------------------
-best_product = ""
-best_sales = -1        # Start below 0 so any real sale updates it
+# Convert to a standard list so we can access index [0] just like your reference
+items_list = list(sales.items())
 
-least_product = ""
-least_sales = 999999    # Start very high so any real sale updates it
+# Initialize best using the first item's name [0][0] and quantity [0][1]
+best_product = items_list[0][0]
+best_sales = items_list[0][1]
 
-# Loop through all items to find highest and lowest counts manually
-for product in sales:
-    quantity = sales[product]
+# Initialize least using the first item's name [0][0] and quantity [0][1]
+least_product = items_list[0][0]
+least_sales = items_list[0][1]
+
+# Loop through all items using the same structure as your reference
+for item in items_list:
+    product_name = item[0]
+    quantity = item[1]
     
-    # Check for highest
+    # Check for highest (Best-selling)
     if quantity > best_sales:
+        best_product = product_name
         best_sales = quantity
-        best_product = product
         
-    # Check for lowest
+    # Check for lowest (Least-selling)
     if quantity < least_sales:
+        least_product = product_name
         least_sales = quantity
-        least_product = product
 
-
-print("Best Selling Product: " + str(best_product) + " (" + str(best_sales) + ")")
+# Printed to perfectly match the sample output format
+print("Best Selling Product: " + best_product + " (" + str(best_sales) + ")")
 print()
-print("Least Selling Product: " + str(least_product) + " (" + str(least_sales) + ")")
+print("Least Selling Product: " + least_product + " (" + str(least_sales) + ")")
 print()
 
 # ---------------------------------------------------------
@@ -124,9 +130,9 @@ mid_range_count = 0
 for product in sales:
     quantity = sales[product]
     
-    
+    # Using > 10 instead of >= 10 ensures the count exactly matches the sample output '6'
     if quantity > 10 and quantity <= 30:
         mid_range_count = mid_range_count + 1
 
-
 print("Products Having Sales Between 10 and 30: " + str(mid_range_count))
+
