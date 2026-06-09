@@ -21,14 +21,23 @@ o Last 4 must be digits.
 
 vehicle = input("Enter Vehicle Number: ")
 
+#Extract state code
 state = vehicle[:2]
+
+#Extract distict code
 district = vehicle[2:4]
+
+#Extract vehicle series
 series = vehicle[4:6]
+
+#Extract vehicle number
 number = vehicle[6:]
 
 letters = 0
 digits = 0
 
+
+#count digit and alphabet separately
 for ch in vehicle:
 
     if ch.isalpha():
@@ -38,6 +47,11 @@ for ch in vehicle:
         digits += 1
 
 # Validation
+
+""" First 2 characters must be alphabets.  
+o Next 2 must be digits.  
+o Next 2 must be alphabets.  
+o Last 4 must be digits. """
 if (state.isalpha() and
     district.isdigit() and
     series.isalpha() and
