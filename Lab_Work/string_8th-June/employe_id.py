@@ -28,19 +28,28 @@ digit_sum = 0
 
 # Count uppercase letters and digits
 for ch in emp_id:
+
+    #counting the number of upper case letter
     if ch.isupper():
         upper += 1
 
+    #counting hte number of digits
     if ch.isdigit():
         digit_count += 1
         digit_list.append(int(ch))
         digit_sum += int(ch)
 
-# Extract year and employee name
+# Extract year and employe name
+
+#Extracting the joining year
 year = emp_id[3:7]
+
+#Extracting the employe name
 name = emp_id[7:-3]
 
-# Validation
+""" Starts with "EMP"  
+o Contains exactly 4 digits for the year  
+o Ends with exactly 3 digits """
 if emp_id.startswith("EMP") and year.isdigit() and emp_id[-3:].isdigit():
     status = "Valid"
 else:
