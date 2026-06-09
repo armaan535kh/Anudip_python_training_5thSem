@@ -17,9 +17,11 @@ Write a program to:
 
 attendance = input("Enter Attendance Record: ")
 
+# Count Present and Absent days. 
 present = attendance.count("P")
 absent = attendance.count("A")
 
+#Calculate attendance percentage. 
 percentage = (present / len(attendance)) * 100
 
 # Longest Present Streak
