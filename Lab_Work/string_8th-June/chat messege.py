@@ -34,11 +34,11 @@ shortest = min(words, key=len)
 print("Longest Word =", longest)
 print("Shortest Word =", shortest)
 
-# Count Python
+# Count Python how many time does it appear
 count_python = words.count("Python")
 print("Occurrences of Python =", count_python)
 
-# Words greater than 4 characters
+# Words more than 4 characters
 long_words = []
 
 for word in words:
