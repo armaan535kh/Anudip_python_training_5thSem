@@ -19,16 +19,16 @@ msg = input("Enter Message: ")
 
 words = msg.split()
 
-# Total characters
+# Count total characters
 print("Total Characters =", len(msg))
 
-# Total words
+# Count total words.
 print("Total Words =", len(words))
 
-# Longest word
+# Find the longest word.
 longest = max(words, key=len)
 
-# Shortest word
+# Find the shortest word.
 shortest = min(words, key=len)
 
 print("Longest Word =", longest)
@@ -38,7 +38,7 @@ print("Shortest Word =", shortest)
 count_python = words.count("Python")
 print("Occurrences of Python =", count_python)
 
-# Words more than 4 characters
+# Create a list of words having more than 4 characters
 long_words = []
 
 for word in words:
@@ -47,7 +47,7 @@ for word in words:
 
 print("Words Longer Than 4 Characters =", long_words)
 
-# Words starting with vowel
+#  Display all words starting with a vowel
 vowel_words = []
 
 for word in words:
