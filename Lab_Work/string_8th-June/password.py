@@ -28,17 +28,20 @@ lower = 0
 digits = []
 special = []
 
+#counting 
 for ch in password:
 
+#uppercase letter
     if ch.isupper():
         upper += 1
 
+#count lowercase
     elif ch.islower():
         lower += 1
-
+#count digits
     elif ch.isdigit():
         digits.append(ch)
-
+#count special 
     else:
         special.append(ch)
 
