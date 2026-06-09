@@ -18,11 +18,20 @@ o At least one '.' exists after '@'.
 
 email = input("Enter Email: ")
 
+ # 1. Extract username
+# Grabs everything from the beginning of the string up to the '@' symbol
 username = email[:email.index("@")]
-domain_part = email[email.index("@")+1:]
-
+    
+# Extract the full domain part (everything after the '@' symbol)
+domain_part = email[email.index("@") + 1:]
+    
+# 2. Extract domain name
+# Grabs the text from the start of the domain part up to the first '.'
 domain = domain_part[:domain_part.index(".")]
-extension = domain_part[domain_part.index(".")+1:]
+    
+# 3. Extract extension
+# Grabs everything remaining after the first '.' in the domain part
+extension = domain_part[domain_part.index(".") + 1:]
 
 digits = 0
 special = 0

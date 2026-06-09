@@ -21,7 +21,7 @@ words = review.split()
 
 print("Total Words =", len(words))
 
-# Frequency Dictionary
+# Create a dictionary containing word frequencies
 freq = {}
 
 for word in words:
@@ -36,12 +36,12 @@ print("Word Frequencies")
 for key in freq:
     print(key, "->", freq[key])
 
-# Most frequent word
+# Find the most frequently used word.
 most_word = max(freq, key=freq.get)
 
 print("Most Frequent Word =", most_word)
 
-# Words appearing once
+#Find all words appearing only once
 once = []
 
 for key in freq:
@@ -50,7 +50,7 @@ for key in freq:
 
 print("Words Appearing Once =", once)
 
-# Words more than 5 characters
+#Count words having more than 5 characters.
 count = 0
 
 for word in words:
@@ -59,10 +59,10 @@ for word in words:
 
 print("Words More Than 5 Characters =", count)
 
-# Reverse order
+# Display words in reverse order
 print("Reverse Order =", words[::-1])
 
-# Unique words
+#  Create a list of unique words
 unique = list(freq.keys())
 
 print("Unique Words =", unique)
