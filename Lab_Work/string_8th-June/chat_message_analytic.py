@@ -1,17 +1,17 @@
-# Chat Message Analytics
-# Problem Statement
-# A chat application stores a message:
-# Python is awesome and Python is easy to learn
-# Tasks
-# Write a program to:
-# 1. Count total characters.
-# 2. Count total words.
-# 3. Find the longest word.
-# 4. Find the shortest word.
-# 5. Count how many times the word "Python" appears.
-# 6. Create a list of words having more than 4 characters.
-# 7. Display all words starting with a vowel.
-# 8. Count the number of vowels and consonants.
+""" Chat Message Analytics
+ Problem Statement
+ A chat application stores a message:
+ Python is awesome and Python is easy to learn
+ Tasks
+ Write a program to:
+ 1. Count total characters.
+ 2. Count total words.
+ 3. Find the longest word.
+ 4. Find the shortest word.
+ 5. Count how many times the word "Python" appears.
+ 6. Create a list of words having more than 4 characters.
+ 7. Display all words starting with a vowel.
+ 8. Count the number of vowels and consonants. """
 
 message = "Python is awesome and Python is easy to learn"
 
